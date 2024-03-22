@@ -1,0 +1,246 @@
+html {
+    background-color: #E7E7DF;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    width: 750px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    margin:auto;
+    overflow-x:hidden;
+    font-family: 'Bubbly', sans-serif;
+    font-size: medium;
+    height: 100%;                            
+}
+
+#main {
+    padding-bottom: 2em;
+    background-color: white;
+
+}
+
+#logo {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    overflow-x:hidden;
+    left: 0;
+    bottom: 2;
+    width: 750px;
+    text-align: center;
+    color: #6997BF;
+    height: 80;
+    /* padding: 2em; */
+    background-color: white;
+}
+
+a {
+    margin: 0;
+}
+
+p {
+    display: block;
+    margin-top: 0;
+}
+
+.buttons {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: inline;
+    
+}
+    
+.action_btn {
+    height: 200px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    /* text-align:  */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: 'Rubik Bubbles';
+    font-weight: 900;
+    font-size: 1.5em;
+    
+}
+
+.action_btn.vid {
+    background-image: url(./amvs.jpeg); 
+    /* opacity: 50%; */
+    background-size: cover;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #0e3d65;
+    color: #d1dae3;
+    overflow: hidden;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.action_btn.vid::after {
+    background-image: url('trans1.jpeg');
+    /* background-color: #ff0; */
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.action_btn.vid:hover::after {
+    transform: translate(0,0);
+}
+
+.action_btn.vid:hover {
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.action_btn.vid::before {
+    /* content: ""; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.action_btn.randm {
+    background-image: url(./sound.jpeg) ; 
+    /* opacity: 50%; */
+    background-size: cover;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #BF3636;
+    color: #FFF5C7;
+    overflow: hidden;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.action_btn.randm::after {
+    background-image: url('trans.jpeg');
+    /* background-color: #ff0; */
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.action_btn.randm:hover::after {
+    transform: translate(0,0);
+}
+
+.action_btn.randm:hover {
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.blob {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    color: #6997BF;
+}
+
+#video, #search-results{
+    text-align: center;
+    color: #6997BF;
+    font-size: 14px;
+    width: 100%;
+}
+
+video {
+    width: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 24px;
+}
+
+
+#title.validate {
+    left: -50;
+}
+
+.random, .next, .back{
+    height: 40px;
+    text-align: center;
+}
+#rndm-btn, .next, .back{
+    background-color:#D9C8A9;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    font-family: 'Bubbly';
+    height: 40px;
+    font-size: 24px;
+}
+
+#rndm-btn:hover, .next:hover, .back:hover, #heart-btn:hover {
+    background-color: #BF8641;
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart-btn {
+    height: 30px;
+    background-color:#D9C8A9;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    font-family: 'Bubbly';
+}
+
+#search_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    
+}

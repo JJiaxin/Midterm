@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link href="https://fonts.cdnfonts.com/css/bubbly-2" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Bubbles' rel='stylesheet'>
+    
+    <title>Anime AMV/Soundtrack</title>
+</head>
+<body>
+    <div id="main">
+        <div id="logo">
+            <header>
+                <a href="index.html" class="active router-link-exact-active" id="link-guide">
+                    <img src="/logo.png" width="450" alt="">
+                </a>
+            </header>
+        </div>
+        <div class="blob">
+            <p>Welcome to AnySo! Here, you can find the Opening/Ending videos of your favorite animes! Either search in the searchbar or click to navigate to the Video page or Random for a surprise! Have fun exploring!</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form id="search_form" class="col s12">
+                        
+                    <input placeholder="Search..." id="title" type="text" class="validate">
+                    <button id="heart-btn">♡</button> <br>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="action_btn">
+
+                <button name="video" class="action_btn vid" type="submit" value="video" onclick="myFunction()">
+                    <b>Videos</b>
+                </button>
+                <button name="random" class="action_btn randm" type="submit" value="theme" onclick="myFunction2()">
+                    <b>Random</b>
+                </button>
+
+
+            </div>
+        </div>
+        <div id="search-results" class="hidden">
+            
+
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html" class="ga_nav_link">
+                <img src="./logo.png" alt="AnySo" loading="lazy" width="80">
+                
+            </a>
+            <p>Website created by Cindy Jiang</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- <script defer src = 'app.js'></script> -->
+    <!-- <script src="./result.js"></script> -->
+</body>
+</html>
